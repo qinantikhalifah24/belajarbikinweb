@@ -1,106 +1,186 @@
 <!DOCTYPE html>
 <html lang="id">
-<        /* PENDIDIKAN */
-        .education {
-            position: relative;
-            padding-left: 25px;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Khalifah Qinanti</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .education::before {
-            content: "";
-            position: absolute;
-            left: 5px;
-            top: 5px;
-            bottom: 5px;
-            width: 2px;
-            background: #cdb9ec;
+        body {
+            font-family: Arial, sans-serif;
+            background: #edf5ff;
+            color: #26384d;
+        }
+
+        .wrapper {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .profile {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(64, 100, 140, 0.18);
+        }
+
+        /* HEADER */
+        .top {
+            background: linear-gradient(135deg, #507eae, #86afd4);
+            padding: 45px 30px;
+            color: white;
+            position: relative;
+        }
+
+        .top h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .top p {
+            font-size: 16px;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 9px 18px;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 30px;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 35px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            color: #507eae;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            color: #91b8d9;
+        }
+
+        .about {
+            line-height: 1.8;
+            background: #f5f9fd;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        /* BIODATA */
+        .biodata {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .item {
+            background: #f5f9fd;
+            padding: 17px;
+            border-radius: 14px;
+            border-left: 4px solid #78a5cc;
+        }
+
+        .item small {
+            color: #7c8b99;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .item strong {
+            color: #304e6c;
+        }
+
+        /* PENDIDIKAN */
+        .education {
+            border-left: 3px solid #86afd4;
+            padding-left: 20px;
         }
 
         .school {
+            background: #f5f9fd;
+            padding: 18px;
+            border-radius: 15px;
+            margin-bottom: 15px;
             position: relative;
-            margin-bottom: 22px;
-            padding: 17px 20px;
-            background: #faf8fd;
-            border-radius: 16px;
         }
 
         .school::before {
             content: "";
-            position: absolute;
-            width: 12px;
-            height: 12px;
+            width: 13px;
+            height: 13px;
+            background: #507eae;
             border-radius: 50%;
-            background: #9b7bc9;
-            left: -26px;
-            top: 22px;
-            border: 3px solid #f8f7fc;
+            position: absolute;
+            left: -29px;
+            top: 23px;
         }
 
         .school h3 {
-            color: #7255a8;
-            font-size: 18px;
-            margin-bottom: 5px;
+            color: #507eae;
+            margin-bottom: 6px;
         }
 
-        .school p {
-            color: #77717f;
-        }
-
-        /* TENTANG */
-        .about {
-            line-height: 1.8;
-            color: #625c69;
-            background: #faf8fd;
-            padding: 22px;
+        /* PMR */
+        .pmr {
+            background: linear-gradient(135deg, #eef7ff, #f8fbff);
+            border: 2px solid #d7e8f7;
             border-radius: 18px;
+            padding: 25px;
         }
 
-        /* QUOTE */
-        .quote {
-            margin-top: 35px;
-            padding: 25px;
-            text-align: center;
-            border-radius: 20px;
-            background: linear-gradient(135deg, #eee5ff, #e5f4ff);
-            color: #65577a;
-            font-style: italic;
+        .pmr h3 {
+            color: #507eae;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .pmr p {
             line-height: 1.7;
+        }
+
+        .pmr-symbol {
+            font-size: 35px;
+            margin-bottom: 10px;
         }
 
         /* FOOTER */
         footer {
+            background: #304e6c;
+            color: white;
             text-align: center;
-            margin-top: 35px;
-            padding-top: 25px;
-            border-top: 1px solid #eee8f5;
-            color: #9a94a3;
+            padding: 20px;
             font-size: 14px;
         }
 
-        /* HP */
         @media (max-width: 600px) {
 
-            body {
-                padding: 15px 10px;
-            }
-
-            .card {
-                padding: 28px 20px;
-                border-radius: 24px;
-            }
-
-            .header h1 {
+            .top h1 {
                 font-size: 29px;
             }
 
-            .avatar {
-                width: 105px;
-                height: 105px;
-                font-size: 43px;
+            .content {
+                padding: 25px 20px;
             }
 
-            .section-title {
-                font-size: 20px;
+            .biodata {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -108,165 +188,125 @@
 
 <body>
 
-    <div class="container">
+<div class="wrapper">
 
-        <div class="card">
+    <div class="profile">
 
-            <!-- HEADER -->
-            <div class="header">
+        <div class="top">
+            <h1>Khalifah Qinanti</h1>
+            <p>Student Profile</p>
+            <div class="badge">SMA Negeri 19 Bandung</div>
+        </div>
 
-                <div class="avatar">
-                    🌷
-                </div>
 
-                <h1>Khalifah Qinanti</h1>
-
-                <p>Personal Biodata • My First Website</p>
-
-            </div>
-
+        <div class="content">
 
             <!-- TENTANG SAYA -->
             <div class="section">
-
                 <h2 class="section-title">
-                    ✦ Tentang Saya
+                    Tentang <span>Saya</span>
                 </h2>
 
                 <div class="about">
-
-                    Halo! Saya <b>Khalifah Qinanti</b>.
-                    Saya adalah seorang pelajar yang sedang menempuh
-                    pendidikan di SMA Negeri 19 Bandung.
-
-                    <br><br>
-
-                    Website ini dibuat sebagai biodata pribadi sekaligus
-                    menjadi salah satu langkah saya untuk belajar membuat
-                    dan mengembangkan website.
-
+                    Halo! Saya Khalifah Qinanti, seorang pelajar
+                    yang sedang menempuh pendidikan di SMA Negeri 19 Bandung.
+                    Saya tertarik untuk mempelajari hal-hal baru,
+                    termasuk teknologi dan pembuatan website.
                 </div>
-
             </div>
 
 
             <!-- BIODATA -->
             <div class="section">
-
                 <h2 class="section-title">
-                    ♡ Biodata Diri
+                    Biodata <span>Diri</span>
                 </h2>
 
                 <div class="biodata">
 
-                    <div class="data">
-                        <strong>NAMA</strong>
-                        <span>Khalifah Qinanti</span>
+                    <div class="item">
+                        <small>Nama</small>
+                        <strong>Khalifah Qinanti</strong>
                     </div>
 
-                    <div class="data">
-                        <strong>TEMPAT, TANGGAL LAHIR</strong>
-                        <span>Bandung, 24 Agustus 2011</span>
+                    <div class="item">
+                        <small>Tempat, Tanggal Lahir</small>
+                        <strong>Bandung, 24 Agustus 2011</strong>
+                    </div>
+
+                    <div class="item">
+                        <small>Status</small>
+                        <strong>Pelajar</strong>
+                    </div>
+
+                    <div class="item">
+                        <small>Cita-cita</small>
+                        <strong>Psikolog</strong>
                     </div>
 
                 </div>
-
-            </div>
-
-
-            <!-- CITA-CITA -->
-            <div class="section">
-
-                <h2 class="section-title">
-                    ✧ Cita-Cita
-                </h2>
-
-                <div class="dream">
-
-                    <div class="dream-icon">
-                        🧠
-                    </div>
-
-                    <h3>Psikolog</h3>
-
-                    <p>
-                        Saya bercita-cita menjadi seorang psikolog
-                        dan dapat membantu orang lain melalui ilmu
-                        yang saya pelajari.
-                    </p>
-
-                </div>
-
             </div>
 
 
             <!-- RIWAYAT PENDIDIKAN -->
             <div class="section">
-
                 <h2 class="section-title">
-                    🎓 Riwayat Pendidikan
+                    Riwayat <span>Pendidikan</span>
                 </h2>
 
                 <div class="education">
 
                     <div class="school">
-
-                        <h3>MI Al-Mukhlis</h3>
-
-                        <p>
-                            Sekolah Dasar / Madrasah Ibtidaiyah
-                        </p>
-
+                        <h3>SD Al-Mukhlis</h3>
+                        <p>Sekolah Dasar</p>
                     </div>
 
-
                     <div class="school">
-
                         <h3>SMP Negeri 35 Bandung</h3>
-
-                        <p>
-                            Sekolah Menengah Pertama
-                        </p>
-
+                        <p>Sekolah Menengah Pertama</p>
                     </div>
 
-
                     <div class="school">
-
                         <h3>SMA Negeri 19 Bandung</h3>
-
-                        <p>
-                            Sekolah Menengah Atas
-                        </p>
-
+                        <p>Sekolah Menengah Atas</p>
                     </div>
 
                 </div>
-
             </div>
 
 
-            <!-- QUOTE -->
-            <div class="quote">
+            <!-- ORGANISASI -->
+            <div class="section">
+                <h2 class="section-title">
+                    Organisasi
+                </h2>
 
-                "Setiap langkah kecil hari ini adalah bagian
-                dari perjalanan menuju masa depan."
+                <div class="pmr">
 
+                    <div class="pmr-symbol">🩺</div>
+
+                    <h3>Palang Merah Remaja (PMR)</h3>
+
+                    <p>
+                        Saya mengikuti organisasi PMR di sekolah.
+                        Melalui PMR, saya belajar tentang pertolongan pertama,
+                        kerja sama, kedisiplinan, kepedulian, dan kegiatan
+                        kemanusiaan.
+                    </p>
+
+                </div>
             </div>
-
-
-            <!-- FOOTER -->
-            <footer>
-
-                © 2026 Khalifah Qinanti
-                <br>
-                Made with HTML & CSS ♡
-
-            </footer>
 
         </div>
 
+
+        <footer>
+            © 2026 Khalifah Qinanti
+        </footer>
+
     </div>
+
+</div>
 
 </body>
 </html>
