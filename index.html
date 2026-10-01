@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<        /* PENDIDIKAN */
+        .education {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .education::before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: #cdb9ec;
+        }
+
+        .school {
+            position: relative;
+            margin-bottom: 22px;
+            padding: 17px 20px;
+            background: #faf8fd;
+            border-radius: 16px;
+        }
+
+        .school::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #9b7bc9;
+            left: -26px;
+            top: 22px;
+            border: 3px solid #f8f7fc;
+        }
+
+        .school h3 {
+            color: #7255a8;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .school p {
+            color: #77717f;
+        }
+
+        /* TENTANG */
+        .about {
+            line-height: 1.8;
+            color: #625c69;
+            background: #faf8fd;
+            padding: 22px;
+            border-radius: 18px;
+        }
+
+        /* QUOTE */
+        .quote {
+            margin-top: 35px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #eee5ff, #e5f4ff);
+            color: #65577a;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #eee8f5;
+            color: #9a94a3;
+            font-size: 14px;
+        }
+
+        /* HP */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px 10px;
+            }
+
+            .card {
+                padding: 28px 20px;
+                border-radius: 24px;
+            }
+
+            .header h1 {
+                font-size: 29px;
+            }
+
+            .avatar {
+                width: 105px;
+                height: 105px;
+                font-size: 43px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <!-- HEADER -->
+            <div class="header">
+
+                <div class="avatar">
+                    🌷
+                </div>
+
+                <h1>Khalifah Qinanti</h1>
+
+                <p>Personal Biodata • My First Website</p>
+
+            </div>
+
+
+            <!-- TENTANG SAYA -->
+            <div class="section">
+
+                <h2 class="section-title">
+                    ✦ Tentang Saya
+                </h2>
+
+                <div class="about">
+
+                    Halo! Saya <b>Khalifah Qinanti</b>.
+                    Saya adalah seorang pelajar yang sedang menempuh
+                    pendidikan di SMA Negeri 19 Bandung.
+
+                    <br><br>
+
+                    Website ini dibuat sebagai biodata pribadi sekaligus
+                    menjadi salah satu langkah saya untuk belajar membuat
+                    dan mengembangkan website.
+
+                </div>
+
+            </div>
+
+
+            <!-- BIODATA -->
+            <div class="section">
+
+                <h2 class="section-title">
+                    ♡ Biodata Diri
+                </h2>
+
+                <div class="biodata">
+
+                    <div class="data">
+                        <strong>NAMA</strong>
+                        <span>Khalifah Qinanti</span>
+                    </div>
+
+                    <div class="data">
+                        <strong>TEMPAT, TANGGAL LAHIR</strong>
+                        <span>Bandung, 24 Agustus 2011</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CITA-CITA -->
+            <div class="section">
+
+                <h2 class="section-title">
+                    ✧ Cita-Cita
+                </h2>
+
+                <div class="dream">
+
+                    <div class="dream-icon">
+                        🧠
+                    </div>
+
+                    <h3>Psikolog</h3>
+
+                    <p>
+                        Saya bercita-cita menjadi seorang psikolog
+                        dan dapat membantu orang lain melalui ilmu
+                        yang saya pelajari.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIWAYAT PENDIDIKAN -->
+            <div class="section">
+
+                <h2 class="section-title">
+                    🎓 Riwayat Pendidikan
+                </h2>
+
+                <div class="education">
+
+                    <div class="school">
+
+                        <h3>MI Al-Mukhlis</h3>
+
+                        <p>
+                            Sekolah Dasar / Madrasah Ibtidaiyah
+                        </p>
+
+                    </div>
+
+
+                    <div class="school">
+
+                        <h3>SMP Negeri 35 Bandung</h3>
+
+                        <p>
+                            Sekolah Menengah Pertama
+                        </p>
+
+                    </div>
+
+
+                    <div class="school">
+
+                        <h3>SMA Negeri 19 Bandung</h3>
+
+                        <p>
+                            Sekolah Menengah Atas
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUOTE -->
+            <div class="quote">
+
+                "Setiap langkah kecil hari ini adalah bagian
+                dari perjalanan menuju masa depan."
+
+            </div>
+
+
+            <!-- FOOTER -->
+            <footer>
+
+                © 2026 Khalifah Qinanti
+                <br>
+                Made with HTML & CSS ♡
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
